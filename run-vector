@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv sh
+
+HOME=/root
+/root/.vector/bin/vector -c /etc/vector/vector.toml

@@ -1,0 +1,17 @@
+data_dir = "/var/lib/vector"
+
+[sources.in]
+  type = "file"
+  include = ["/var/log/fly/current"]
+  ignore_older = 86400
+  start_at_beginning = false
+  oldest_first = false
+
+[sinks.out]
+  type = "logdna"
+  inputs = ["in"]
+  api_key = "${LOGDNA_TOKEN}"
+  hostname = "${FLY_ALLOC_ID}"
+  default_app = "${TARGET_FLY_APP_NAME}"
+  healthcheck = true
+
