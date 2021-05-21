@@ -1,4 +1,6 @@
 #!/usr/bin/with-contenv sh
 
 HOME=/root
+logdna-agent -k ${LOGDNA_TOKEN}
+logdna-agent -d /var/log/fly/current
 logdna-agent
