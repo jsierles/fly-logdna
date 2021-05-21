@@ -1,3 +1,3 @@
 #!/usr/bin/with-contenv sh
 
-HOME=/root /root/.fly/bin/fly logs -a $FLY_APP_NAME
+HOME=/root /root/.fly/bin/fly logs -a $TARGET_FLY_APP_NAME
