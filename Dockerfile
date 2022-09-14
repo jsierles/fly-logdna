@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 LABEL maintainer="Joshua Sierles joshua@hey.com"
 
-ARG S6_OVERLAY_RELEASE=https://github.com/just-containers/s6-overlay/releases/latest/download/s6-overlay-amd64.tar.gz
+ARG S6_OVERLAY_RELEASE=https://github.com/just-containers/s6-overlay/releases/download/v2.2.0.3/s6-overlay-amd64.tar.gz
 ENV S6_OVERLAY_RELEASE=${S6_OVERLAY_RELEASE}
 
 ADD rootfs /
