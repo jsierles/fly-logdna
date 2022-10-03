@@ -1,10 +1,4 @@
 # fly-logdna
 
-Fly application template for publishing fly logs to LogDNA
 
-# Usage
-
-```
-fly secrets set TARGET_FLY_APP_NAME=yourapp LOGDNA_TOKEN=token FLY_TOKEN=token
-fly deploy
-```
+Fly application template for publishing fly logs to LogDNA. This project is superseded by https://github.com/superfly/fly-log-shipper. Don't use this!
